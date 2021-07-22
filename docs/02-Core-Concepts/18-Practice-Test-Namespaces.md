@@ -45,6 +45,8 @@ Solutions to practice test for namespaces
 
    ```
    Host Name: db-service and Host Port: 3306
+
+   k exec pod_name -n namespace_name -- date
    ```
    </details>
 

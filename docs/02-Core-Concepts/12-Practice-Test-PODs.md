@@ -110,7 +110,7 @@
    To create a pod definition yaml file:
   
    ```
-   $ kubectl run redis --image=redis123 --dry-run=client -oyaml > redis.yaml
+   $ kubectl run redis --image=redis --dry-run=client -o yaml > redis.yaml
    
    $ kubectl create -f redis.yaml
    ```

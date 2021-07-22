@@ -7,7 +7,7 @@ Solutions to practice test - commands and arguments
   <details>
   
   ```
-  $ kubectl get pods
+  $ kubectl get pods --no-headers | wc -l
   ```
   </details>
   

@@ -139,6 +139,7 @@ In this section, we will take a look at the below
 ```
 
   ```
+  # 波波：kubenertes 1.21 似乎已经不支持这种做法了
   $ kubectl apply -f replicaset-definition.yaml
   ```
   - Second way is to use **`kubectl scale`** command.
