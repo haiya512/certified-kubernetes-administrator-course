@@ -73,6 +73,7 @@ Solutions to practice test - rolling updates and rollback
 - Look at the Max Unavailable value under RollingUpdateStrategy in deployment details
 
   <details>
+  
   ```
   $ kubectl describe deployment
   ```

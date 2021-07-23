@@ -5,6 +5,7 @@ Solutions to the practice test - kubeconfig
 - Look for the kube config file under `/root/.kube`
   
   <details>
+  
   ```
   $ ls -l /root/.kube
   ```
@@ -13,6 +14,7 @@ Solutions to the practice test - kubeconfig
 - Run the kubectl config view command and count the number of clusters
 
   <details>
+  
   ```
   $ kubectl config view
   ```
@@ -21,6 +23,7 @@ Solutions to the practice test - kubeconfig
 - Run the command `kubectl config view` and count the number of users
 
   <details>
+  
   ```
   $ kubectl config view
   ```
@@ -29,6 +32,7 @@ Solutions to the practice test - kubeconfig
 - How many contexts are defined in the default kubeconfig file?
   
   <details>
+  
   ```
   $ kubectl config view
   ```
@@ -37,6 +41,7 @@ Solutions to the practice test - kubeconfig
 - Run the command 'kubectl config view' and look for the user name.
   
   <details>
+  
   ```
   $ kubectl config view
   ```
@@ -45,6 +50,7 @@ Solutions to the practice test - kubeconfig
 - What is the name of the cluster configured in the default kubeconfig file?
   
   <details>
+  
   ```
   $ kubectl config view
   ```
@@ -53,6 +59,7 @@ Solutions to the practice test - kubeconfig
 - Run the command 'kubectl config view --kubeconfig my-kube-config'
   
   <details>
+  
   ```
   $ kubectl config view --kubeconfig my-kube-config
   ```
@@ -61,6 +68,7 @@ Solutions to the practice test - kubeconfig
 - How many contexts are configured in the 'my-kube-config' file?
   
   <details>
+  
   ```
   $ kubectl config view --kubeconfig my-kube-config
   ```
@@ -69,6 +77,7 @@ Solutions to the practice test - kubeconfig
 - What user is configured in the 'research' context?
   
   <details>
+  
   ```
   $ kubectl config view --kubeconfig my-kube-config
   ```
@@ -77,6 +86,7 @@ Solutions to the practice test - kubeconfig
 - What is the name of the client-certificate file configured for the 'aws-user'?
   
   <details>
+  
   ```
   $ kubectl config view --kubeconfig my-kube-config
   ```
@@ -85,6 +95,7 @@ Solutions to the practice test - kubeconfig
 - What is the current context set to in the 'my-kube-config' file?
   
   <details>
+  
   ```
   $ kubectl config view --kubeconfig my-kube-config
   ```
@@ -93,6 +104,7 @@ Solutions to the practice test - kubeconfig
 - Run the command kubectl config --kubeconfig=/root/my-kube-config use-context research
   
   <details>
+  
   ```
   $ kubectl config --kubeconfig=/root/my-kube-config use-context research
   ```
@@ -101,6 +113,7 @@ Solutions to the practice test - kubeconfig
 - Replace the contents in the default kubeconfig file with the content from my-kube-config file.
   
   <details>
+  
   ```
   $ mv .kube/config .kube/config.bak
   $ cp /root/my-kube-config .kube/config

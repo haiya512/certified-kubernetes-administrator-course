@@ -5,6 +5,7 @@ Solutions to practice test - OS Upgrades
 - Let us explore the environment first. How many nodes do you see in the cluster?
   
   <details>
+  
   ```
   $ kubectl get nodes
   ```
@@ -13,7 +14,8 @@ Solutions to practice test - OS Upgrades
 - How many applications do you see hosted on the cluster?
   
   <details>
-  ```
+  
+   ```
   $ kubectl get deploy
   ```
   </details>
@@ -21,7 +23,8 @@ Solutions to practice test - OS Upgrades
 - Run the command 'kubectl get pods -o wide' and get the list of nodes the pods are placed on
   
   <details>
-  ```
+  
+   ```
   $ kubectl get pods -o wide
   ```
   </details>
@@ -29,7 +32,8 @@ Solutions to practice test - OS Upgrades
 - Run the command kubectl drain node01 --ignore-daemonsets
   
   <details>
-  ```
+  
+   ```
   $ kubectl drain node01 --ignore-daemonsets
   ```
   </details>
@@ -37,7 +41,8 @@ Solutions to practice test - OS Upgrades
 - Run the command 'kubectl get pods -o wide' and get the list of nodes the pods are placed on
   
   <details>
-  ```
+  
+   ```
   $ kubectl get pods -o wide
   ```
   </details>
@@ -45,7 +50,8 @@ Solutions to practice test - OS Upgrades
 - Run the command kubectl uncordon node01
   
   <details>
-  ```
+  
+   ```
   $ kubectl uncordon node01
   ```
   </details>
@@ -53,7 +59,8 @@ Solutions to practice test - OS Upgrades
 - Run the command kubectl get pods -o wide
   
   <details>
-  ```
+  
+   ```
   $ kubectl get pods -o wide
   ```
   </details>
@@ -61,7 +68,8 @@ Solutions to practice test - OS Upgrades
 - Why are there no pods on node01?
   
   <details>
-  ```
+  
+   ```
   Only when new pods are created they will be scheduled
   ```
   </details>
@@ -69,7 +77,8 @@ Solutions to practice test - OS Upgrades
 - Use the command kubectl describe node master and look under taint section to check if it has any taints.
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe node master
   ```
   </details>
@@ -77,7 +86,8 @@ Solutions to practice test - OS Upgrades
 - Run the command kubectl drain node02 --ignore-daemonsets
   
   <details>
-  ```
+  
+   ```
   $ kubectl drain node02 --ignore-daemonsets
   ```
   </details>
@@ -85,7 +95,8 @@ Solutions to practice test - OS Upgrades
 - Check the applications hosted on the node02.
   
   <details>
-  ```
+  
+   ```
   node02 has a pod not part of a replicaset
   $ kubectl get pods -o wide
   ```
@@ -94,7 +105,8 @@ Solutions to practice test - OS Upgrades
 - Check the list of pods
   
   <details>
-  ```
+  
+   ```
   $ kubectl get pods -o wide
   ```
   </details>
@@ -102,7 +114,8 @@ Solutions to practice test - OS Upgrades
 - What would happen to hr-app if node02 is drained forcefully?
   
   <details>
-  ```
+  
+   ```
   $ kubectl drain node02 --ignore-daemonsets --force
   hr-app will be lost forever
   ```
@@ -111,7 +124,8 @@ Solutions to practice test - OS Upgrades
 - Run the command kubectl drain node02 --ignore-daemonsets --force
 
   <details>
-  ```
+  
+   ```
   $ kubectl drain node02 --ignore-daemonsets --force
   ```
   </details>
@@ -119,7 +133,8 @@ Solutions to practice test - OS Upgrades
 - Run the command kubectl cordon node03
   
   <details>
-  ```
+  
+   ```
   $ kubectl cordon node03
   ```
   </details>

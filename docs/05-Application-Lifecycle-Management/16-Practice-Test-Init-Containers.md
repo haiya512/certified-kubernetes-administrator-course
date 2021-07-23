@@ -5,8 +5,10 @@ Solutions to practice test - init-containers
 - Identify the pod that has an initContainer configured.
 
   <details>
+
   ```
   $ kubectl get pods
+  
   $ kubectl describe pods
   ```
   </details>
@@ -14,7 +16,8 @@ Solutions to practice test - init-containers
 - What is the image used by the initContainer on the blue pod?
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe pods blue
   ```
   </details>
@@ -22,6 +25,7 @@ Solutions to practice test - init-containers
 - Run the command kubectl describe pod blue and check the state field of the initContainer.
 
   <details>
+
   ```
   $ kubectl describe pod blue
   ```
@@ -30,7 +34,8 @@ Solutions to practice test - init-containers
 - Check the reason field of the initContainer
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod blue
   ```
   </details>
@@ -38,7 +43,8 @@ Solutions to practice test - init-containers
 - Run the command kubectl describe pod purple
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod purple
   ```
   </details>
@@ -46,7 +52,8 @@ Solutions to practice test - init-containers
 - Run the kubectl describe pod purple command and look at the container state
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod purple
   ```
   </details>
@@ -54,7 +61,8 @@ Solutions to practice test - init-containers
 - Check the commands used in the initContainers. The first one sleeps for 600 seconds (10 minutes) and the second one sleeps for 1200 seconds (20 minutes)
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod purple
   ```
   </details>
@@ -62,7 +70,8 @@ Solutions to practice test - init-containers
 - Update the pod red to use an initContainer that uses the busybox image and sleeps for 20 seconds
   
   <details>
-  ```
+  
+   ```
   $ kubectl get pod red -o yaml > red.yaml
   $ kubectl delete pod red
   ```
@@ -71,7 +80,8 @@ Solutions to practice test - init-containers
   Update the red.yaml with sleep 20 seconds
   
   <details>
-  ```
+  
+   ```
   $ kubectl create -f red.yaml
   ```
   </details>
@@ -79,7 +89,8 @@ Solutions to practice test - init-containers
 - Check the command used by the initContainer. Looks like there is a type in sleep command. Fix it, it should be **`sleep 2`** not **`sleeeep 2`**
   
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod orange
   $ kubectl get pod orange -o yaml > orange.yaml
   $ kubectl delete pod orange

@@ -16,6 +16,7 @@ Solutions to practice test - view certificates
 - Identify the Certificate file used to authenticate kube-apiserver as a client to ETCD Server
   
   <details>
+  
   ```
   $ cat /etc/kubernetes/manifest/kube-apiserver.yaml
   Answer: /etc/kubernetes/pki/apiserver-etcd-client.crt
@@ -25,6 +26,7 @@ Solutions to practice test - view certificates
 - Look for kubelet-client-key option in the file /etc/kubernetes/manifests/kube-apiserver.yaml
   
   <details>
+  
   ```
   Answer: /etc/kubernetes/pki/apiserver-kubelet-client.key
   ```
@@ -33,6 +35,7 @@ Solutions to practice test - view certificates
 - Look for cert file option in the file /etc/kubernetes/manifests/etcd.yaml
   
   <details>
+  
   ```
   Answer: /etc/kubernetes/pki/etcd/server.crt
   ```
@@ -41,6 +44,7 @@ Solutions to practice test - view certificates
 - Look for CA Certificate in file /etc/kubernetes/manifests/etcd.yaml
   
   <details>
+  
   ```
   Answer: /etc/kubernetes/pki/etcd/ca.crt
   ```
@@ -49,6 +53,7 @@ Solutions to practice test - view certificates
 - Run the command openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
   
   <details>
+  
   ```
   $ openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
   ```
@@ -57,6 +62,7 @@ Solutions to practice test - view certificates
 - Run the command openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text and look for issuer
   
   <details>
+  
   ```
   $ openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text 
   ```
@@ -65,6 +71,7 @@ Solutions to practice test - view certificates
 - Run the command openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text and look at Alternative Names
   
   <details>
+  
   ```
   $ openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
   ```
@@ -73,6 +80,7 @@ Solutions to practice test - view certificates
 - Run the command openssl x509 -in /etc/kubernetes/pki/etcd/server.crt -text and look for Subject CN.
   
   <details>
+  
   ```
   $ openssl x509 -in /etc/kubernetes/pki/etcd/server.crt -text
   ```
@@ -81,6 +89,7 @@ Solutions to practice test - view certificates
 - Run the command openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text and check on the Expiry date.
   
   <details>
+  
   ```
   $ openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
   ```
@@ -89,6 +98,7 @@ Solutions to practice test - view certificates
 - Run the command 'openssl x509 -in /etc/kubernetes/pki/ca.crt -text' and look for validity
   
   <details>
+  
   ```
   $ openssl x509 -in /etc/kubernetes/pki/ca.crt -text
   ```
@@ -97,6 +107,7 @@ Solutions to practice test - view certificates
 - Inspect the --cert-file option in the manifests file.
   
   <details>
+  
   ```
   $ vi /etc/kubernetes/manifests/etcd.yaml
   ```
@@ -105,6 +116,7 @@ Solutions to practice test - view certificates
 - ETCD has its own CA. The right CA must be used for the ETCD-CA file in /etc/kubernetes/manifests/kube-apiserver.yaml. 
   
   <details>
+  
   ```
   View answer at /var/answers/kube-apiserver.yaml
   ```

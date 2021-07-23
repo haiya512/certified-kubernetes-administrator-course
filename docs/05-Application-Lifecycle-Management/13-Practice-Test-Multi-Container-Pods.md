@@ -14,7 +14,8 @@ Solutions to practice test - multi-container pods
 - Identify the name of the containers running in the 'blue' pod.
 
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod blue
   ```
   </details>
@@ -22,7 +23,8 @@ Solutions to practice test - multi-container pods
 - Answer file is located at /var/answers/answer-yellow.yaml
 
   <details>
-  ```
+  
+   ```
   $ kubectl create -f /var/answers/answer-yellow.yaml
   ```
   </details>
@@ -30,7 +32,8 @@ Solutions to practice test - multi-container pods
 - We have deployed an application logging stack in the elastic-stack namespace. Inspect it.
   
   <details>
-  ```
+  
+   ```
   $ kubectl get pods -n elastic-stack
   ```
   </details>
@@ -40,7 +43,8 @@ Solutions to practice test - multi-container pods
 - Run `kubectl describe pod -n elastic-stack`
 
   <details>
-  ```
+  
+   ```
   $ kubectl describe pod -n elastic-stack
   ```
   </details>
@@ -48,7 +52,8 @@ Solutions to practice test - multi-container pods
 - Run the command 'kubectl -n elastic-stack exec -it app cat /log/app.log'
   
   <details>
-  ```
+  
+   ```
   $ kubectl -n elastic-stack exec -it app cat /log/app.log
   ```
   </details>

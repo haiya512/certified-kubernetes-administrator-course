@@ -45,6 +45,7 @@ Solutions to practice test - RBAC
 - Check the verbs associated to the kube-proxy role
   
   <details>
+  
   ```
   $ kubectl describe role kube-proxy -n kube-system
   ```
@@ -53,6 +54,7 @@ Solutions to practice test - RBAC
 - Which of the following statements are true?
   
   <details>
+  
   ```
   kube-proxy role can get details of configmap object by the name kube-proxy
   ```
@@ -61,6 +63,7 @@ Solutions to practice test - RBAC
 - Run the command kubectl describe rolebinding kube-proxy -n kube-system
   
   <details>
+  
   ```
   $ kubectl describe rolebinding kube-proxy -n kube-system
   ```
@@ -69,6 +72,7 @@ Solutions to practice test - RBAC
 - Run the command kubectl get pods --as dev-user
   
   <details>
+  
   ```
   $ kubectl get pods --as dev-user
   ```

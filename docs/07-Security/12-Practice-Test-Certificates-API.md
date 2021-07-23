@@ -5,6 +5,7 @@ Solutions to the practice test - certificate API
 - A new member akshay joined our team. He requires access to our cluster. The Certificate Signing Request is at the /root location.
 
   <details>
+  
   ```
   $ ls -l /root
   ```
@@ -13,6 +14,7 @@ Solutions to the practice test - certificate API
 - View the answer at /var/answers/akshay-csr.yaml
   
   <details>
+  
   ```
   $ kubectl create -f /var/answers/akshay-csr.yaml
   ```
@@ -21,6 +23,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl get csr
   
   <details>
+  
   ```
   $ kubectl get csr
   ```
@@ -29,6 +32,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl certificate approve akshay
   
   <details>
+  
   ```
   $ kubectl certificate approve akshay
   ```
@@ -37,6 +41,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl get csr
   
   <details>
+  
   ```
   $ kubectl get csr
   ```
@@ -45,6 +50,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl get csr and look at the Requestor column
   
   <details>
+  
   ```
   $ kubectl get csr
   ```
@@ -55,6 +61,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl get csr
   
   <details>
+  
   ```
   $ kubectl get csr
   ```
@@ -63,6 +70,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl get csr agent-smith -o yaml
   
   <details>
+  
   ```
   $ kubectl get csr agent-smith -o yaml
   ```
@@ -71,6 +79,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl certificate deny agent-smith
   
   <details>
+  
   ```
   $ kubectl certificate deny agent-smith
   ```
@@ -79,6 +88,7 @@ Solutions to the practice test - certificate API
 - Run the command kubectl delete csr agent-smith
   
   <details>
+  
   ```
   $ kubectl delete csr agent-smith
   ```
