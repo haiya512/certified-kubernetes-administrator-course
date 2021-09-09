@@ -213,11 +213,11 @@
  
      Paste the contents of the file(static.yaml) copied in the first step to file nginx-critical.yaml.
  
-     Move/copy the nginx-critical.yaml to path /etc/kubernetes/manifests/
+     # Move/copy the nginx-critical.yaml to path /etc/kubernetes/manifests/
  
      cp nginx-critical.yaml /etc/kubernetes/manifests
  
-     Go back to master node
+     # Go back to master node
  
      kubectl get pods 
      ```

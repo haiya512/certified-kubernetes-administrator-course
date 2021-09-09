@@ -3,7 +3,7 @@
   
 Solutions to the Practice Test - Taints and Tolerations
 
-- Run the command 'kubectl get nodes' and count the number of nodes.
+- Run the command **`kubectl get nodes`** and count the number of nodes.
   
   <details>
 
@@ -26,6 +26,7 @@ Solutions to the Practice Test - Taints and Tolerations
   <details>
 
   ```
+  # 这样设置了之后如何恢复呢？
   $ kubectl taint nodes node01 spray=mortein:NoSchedule
   ```
   </details>
@@ -38,7 +39,7 @@ Solutions to the Practice Test - Taints and Tolerations
   master $ cat /var/answers/mosquito.yaml
   apiVersion: v1
   kind: Pod
-   metadata:
+  metadata:
     name: mosquito
   spec:
    containers:

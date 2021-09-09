@@ -2,7 +2,7 @@
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-multiple-schedulers/)
   
 Solutions to practice test - multiple schedulers
-- Run the command 'kubectl get pods --namespace=kube-system'
+- Run the command `kubectl get pods --namespace=kube-system`
   
   <details>
 
@@ -11,7 +11,7 @@ Solutions to practice test - multiple schedulers
   ```
   </details>
 
-- Run the command 'kubectl describe pod kube-scheduler-master --namespace=kube-system'
+- Run the command `kubectl describe pod kube-scheduler-master --namespace=kube-system`
 
   <details>
 

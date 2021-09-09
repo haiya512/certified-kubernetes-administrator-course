@@ -2,7 +2,7 @@
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-static-pods/)
   
 Solutions to the practice test - static pods
-- Run the command kubectl get pods --all-namespaces and look for those with -master appended in the name
+- Run the command `kubectl get pods --all-namespaces` and look for those with -master appended in the name
   
   <details>
 
@@ -38,7 +38,7 @@ Solutions to the practice test - static pods
   ```
   </details>
 
-- Run the command ps -aux | grep kubelet and identify the config file - --config=/var/lib/kubelet/config.yaml. Then checkin the config file for staticPdPath.
+- Run the command `ps -aux | grep kubelet` and identify the config file - --config=/var/lib/kubelet/config.yaml. Then checkin the config file for staticPdPath.
 
   <details>
 
@@ -51,7 +51,7 @@ Solutions to the practice test - static pods
 
 - Check the image defined in the /etc/kubernetes/manifests/kube-apiserver.yaml manifest file.
 
-- Create a pod definition file in the manifests folder. Use command kubectl run --restart=Never --image=busybox static-busybox --dry-run -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+- Create a pod definition file in the manifests folder. Use command `kubectl run --restart=Never --image=busybox static-busybox --dry-run -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml`
   
   <details>
 
@@ -79,7 +79,7 @@ Solutions to the practice test - static pods
   ```
   </details>
 
-- Identify which node the static pod is created on, ssh to the node and delete the pod definition file. If you don't know theIP of the node, run the kubectl get nodes -o wide command and identify the IP. Then SSH to the node using that IP. For static pod manifest path look at the file /var/lib/kubelet/config.yaml on node01
+- Identify which node the static pod is created on, ssh to the node and delete the pod definition file. If you don't know the IP of the node, run the `kubectl get nodes -o wide` command and identify the IP. Then SSH to the node using that IP. For static pod manifest path look at the file /var/lib/kubelet/config.yaml on node01
 
   <details>
 

@@ -20,7 +20,7 @@ Solutions to practice test - monitor cluster components
   ```
   </details>
   
-- Run the 'kubectl create -f .' command from within the downloaded repository.
+- Run the `kubectl create -f .` command from within the downloaded repository.
 
   <details>
   
@@ -30,7 +30,7 @@ Solutions to practice test - monitor cluster components
   ```
   </details>
     
-- Run the 'kubectl top node' command and wait for a valid output.
+- Run the `kubectl top node` command and wait for a valid output.
 
   <details>
   
@@ -39,7 +39,7 @@ Solutions to practice test - monitor cluster components
   ```
   </details>
   
-- Run the 'kubectl top node' command
+- Run the `kubectl top node` command
 
   <details>
   
@@ -48,7 +48,7 @@ Solutions to practice test - monitor cluster components
   ```
   </details>
   
-- Run the 'kubectl top node' command
+- Run the `kubectl top node` command
   
   <details>
   
@@ -57,7 +57,7 @@ Solutions to practice test - monitor cluster components
   ```
   </details>
   
-- Run the 'kubectl top pod' command
+- Run the `kubectl top pod` command
   
   <details>
   
@@ -66,7 +66,7 @@ Solutions to practice test - monitor cluster components
   ```
   </details>
   
-- Run the 'kubectl top pod' command
+- Run the `kubectl top pod` command
   
   <details>
   

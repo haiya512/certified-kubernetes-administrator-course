@@ -2,7 +2,7 @@
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-labels-and-selectors/)
   
 Solutions to Practice Test - Labels and Selectors
-- Run the command 'kubectl get pods --selector env=dev'
+- Run the command **`kubectl get pods --selector env=dev`**
   
   <details>
 
@@ -11,7 +11,7 @@ Solutions to Practice Test - Labels and Selectors
   ```
   </details>
 
-- Run the command 'kubectl get pods --selector bu=finance'
+- Run the command `kubectl get pods --selector bu=finance`
 
   <details>
 
@@ -20,7 +20,7 @@ Solutions to Practice Test - Labels and Selectors
   ```
   </details>
 
-- Run the command 'kubectl get all --selector env=prod'
+- Run the command `kubectl get all --selector env=prod`
 
   <details>
 

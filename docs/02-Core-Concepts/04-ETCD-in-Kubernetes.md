@@ -26,7 +26,7 @@ In this section, we will take a look at ETCD role in kubernetes
 ## Explore ETCD
 - To list all keys stored by kubernetes, run the below command
   ```
-  $ kubectl exec etcd-master -n kube-system etcdctl get / --prefix -key
+  $ kubectl exec etcd-master -n kube-system etcdctl get / --prefix --keys-only
   ```
 - Kubernetes Stores data in a specific directory structure, the root directory is the **`registry`** and under that you have varies kubernetes constructs such as **`minions`**, **`nodes`**, **`pods`**, **`replicasets`**, **`deployments`**, **`roles`**, **`secrets`** and **`Others`**.
   

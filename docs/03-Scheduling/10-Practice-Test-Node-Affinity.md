@@ -3,7 +3,7 @@
   
 Solutions to practice test - node affinity
 
-- Run the command 'kubectl describe node node01' and count the number of labels under **`Labels Section`**.
+- Run the command `kubectl describe node node01` and count the number of labels under **`Labels Section`**.
   
   <details>
 
@@ -12,7 +12,7 @@ Solutions to practice test - node affinity
   ```
   </details>
 
-- Run the command 'kubectl describe node node01' and see the label section
+- Run the command `kubectl describe node node01` and see the label section
   
   <details>
 
@@ -21,7 +21,7 @@ Solutions to practice test - node affinity
   ```
   </details>
 
-- Run the command 'kubectl label node node01 color=blue'.
+- Run the command `kubectl label node node01 color=blue`.
 
   <details>
 
@@ -76,7 +76,7 @@ Solutions to practice test - node affinity
    ```
    </details>
 
- - Run the command 'kubectl get pods -o wide' and see the Node column
+ - Run the command `kubectl get pods -o wide` and see the Node column
    
    <details>
 

@@ -52,7 +52,7 @@
    <details>
 
    ```
-   $ kubectl get repplicaset
+   $ kubectl get replicaset
    ```
    </details>
 

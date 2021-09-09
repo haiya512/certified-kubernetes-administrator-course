@@ -2,7 +2,7 @@
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-resource-limits/)
   
 Solutions to practice test - resource limtis
-- Run the command 'kubectl describe pod rabbit' and inspect requests.
+- Run the command `kubectl describe pod rabbit` and inspect requests.
   
   <details>
 
@@ -11,7 +11,7 @@ Solutions to practice test - resource limtis
   ```
   </details>
 
-- Run the command 'kubectl delete pod rabbit'.
+- Run the command `kubectl delete pod rabbit`.
 
   <details>
 
@@ -20,7 +20,7 @@ Solutions to practice test - resource limtis
   ```
   </details>
 
-- Run the command 'kubectl get pods' and inspect the status of the pod elephant
+- Run the command `kubectl get pods` and inspect the status of the pod elephant
 
   <details>
 
@@ -29,7 +29,7 @@ Solutions to practice test - resource limtis
   ```
   </details>
 
-- The status 'OOMKilled' indicates that the pod ran out of memory. Identify the memory limit set on the POD.
+- The status **'OOMKilled'** indicates that the pod ran out of memory. Identify the memory limit set on the POD.
 
 - Generate a template of the existing pod.
 
@@ -71,7 +71,7 @@ Solutions to practice test - resource limtis
   ```
   </details>
 
-- Run the command 'kubectl delete pod elephant'.
+- Run the command `kubectl delete pod elephant`.
 
   <details>
 

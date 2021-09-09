@@ -136,7 +136,7 @@
      ```
      </details>
 
-  9. Run below command and troubleshoot step by step:
+  1. Run below command and troubleshoot step by step:
 
      <details>
 

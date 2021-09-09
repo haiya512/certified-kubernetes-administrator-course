@@ -10,28 +10,28 @@ In this section, we will take a look at kubernetes deployments
 #### How do we create deployment?
 
 ```
-    apiVersion: apps/v1
-    kind: Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template:
     metadata:
-      name: myapp-deployment
+      name: myapp-pod
       labels:
         app: myapp
         type: front-end
     spec:
-     template:
-        metadata:
-          name: myapp-pod
-          labels:
-            app: myapp
-            type: front-end
-        spec:
-         containers:
-         - name: nginx-container
-           image: nginx
-     replicas: 3
-     selector:
-       matchLabels:
-        type: front-end
+      containers:
+      - name: nginx-container
+        image: nginx
+  replicas: 3
+  selector:
+    matchLabels:
+    type: front-end
  ```
 - Once the file is ready, create the deployment using deployment definition file
   ```

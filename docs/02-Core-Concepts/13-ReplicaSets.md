@@ -24,25 +24,25 @@ In this section, we will take a look at the below
    ![rc2](../../images/rc2.PNG)
   
 ```
-    apiVersion: v1
-    kind: ReplicationController
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myapp-rc
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template:
     metadata:
-      name: myapp-rc
+      name: myapp-pod
       labels:
         app: myapp
         type: front-end
     spec:
-     template:
-        metadata:
-          name: myapp-pod
-          labels:
-            app: myapp
-            type: front-end
-        spec:
-         containers:
-         - name: nginx-container
-           image: nginx
-     replicas: 3
+      containers:
+      - name: nginx-container
+        image: nginx
+  replicas: 3
 ```
   - To Create the replication controller
     ```
@@ -65,28 +65,28 @@ In this section, we will take a look at the below
    ![rs](../../images/rs.PNG)
 
 ```
-    apiVersion: apps/v1
-    kind: ReplicaSet
-    metadata:
-      name: myapp-replicaset
-      labels:
-        app: myapp
-        type: front-end
-    spec:
-     template:
-        metadata:
-          name: myapp-pod
-          labels:
-            app: myapp
-            type: front-end
-        spec:
-         containers:
-         - name: nginx-container
-           image: nginx
-     replicas: 3
-     selector:
-       matchLabels:
-        type: front-end
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    name: myapp-replicaset
+    labels:
+      app: myapp
+      type: front-end
+  spec:
+    template:
+      metadata:
+        name: myapp-pod
+        labels:
+          app: myapp
+          type: front-end
+      spec:
+        containers:
+        - name: nginx-container
+          image: nginx
+    replicas: 3
+    selector:
+      matchLabels:
+      type: front-end
  ```
 #### ReplicaSet requires a selector definition when compare to Replication Controller.
    
@@ -114,28 +114,28 @@ In this section, we will take a look at the below
 - There are multiple ways to scale replicaset
   - First way is to update the number of replicas in the replicaset-definition.yaml definition file. E.g replicas: 6 and then run 
  ```
-    apiVersion: apps/v1
-    kind: ReplicaSet
-    metadata:
-      name: myapp-replicaset
-      labels:
-        app: myapp
-        type: front-end
-    spec:
-     template:
-        metadata:
-          name: myapp-pod
-          labels:
-            app: myapp
-            type: front-end
-        spec:
-         containers:
-         - name: nginx-container
-           image: nginx
-     replicas: 6
-     selector:
-       matchLabels:
-        type: front-end
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    name: myapp-replicaset
+    labels:
+      app: myapp
+      type: front-end
+  spec:
+    template:
+      metadata:
+        name: myapp-pod
+        labels:
+          app: myapp
+          type: front-end
+      spec:
+        containers:
+        - name: nginx-container
+          image: nginx
+    replicas: 6
+    selector:
+      matchLabels:
+      type: front-end
 ```
 
   ```
