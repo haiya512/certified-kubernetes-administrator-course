@@ -2,7 +2,7 @@
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-env-variables/)
   
 Solutions to practice test env variables
-- Run the command 'kubectl get pods' and count the number of pods.
+- Run the command `kubectl get pods` and count the number of pods.
   
   <details>
   
@@ -12,7 +12,7 @@ Solutions to practice test env variables
   
   </details>
   
-- Run the command 'kubectl describe pod' and look for ENV option
+- Run the command `kubectl describe pod` and look for ENV option
 
   <details>
   
@@ -22,7 +22,7 @@ Solutions to practice test env variables
   
   </details>
   
-- Run the command 'kubectl describe pod' and look for ENV option
+- Run the command `kubectl describe pod` and look for ENV option
   
   <details>
   
@@ -59,7 +59,7 @@ Solutions to practice test env variables
   
   </details>
   
-- Run the command 'kubectl describe configmaps' and look for DB_HOST option
+- Run the command `kubectl describe configmaps` and look for DB_HOST option
 
   <details>
   

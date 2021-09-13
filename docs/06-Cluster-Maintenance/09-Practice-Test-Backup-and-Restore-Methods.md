@@ -2,7 +2,7 @@
   - Take me to [Practice Test](https://kodekloud.com/topic/practice-test-backup-and-restore-methods/)
   
 Solutions to practice test - Backup and Restore Methods
-- Run the kubectl get deployments command
+- Run the `kubectl get deployments` command
   
   <details>
   
@@ -11,7 +11,7 @@ Solutions to practice test - Backup and Restore Methods
   ```
   </details>
   
-- Look at the ETCD Logs using command kubectl logs etcd-master -n kube-system or check the ETCD pod kubectl describe pod etcd-master -n kube-system
+- Look at the ETCD Logs using command `kubectl logs etcd-master -n kube-system` or check the ETCD pod `kubectl describe pod etcd-master -n kube-system`
 
   <details>
   
@@ -21,7 +21,7 @@ Solutions to practice test - Backup and Restore Methods
   ```
   </details>
   
-- Use the command kubectl describe pod etcd-master -n kube-system and look for --listen-client-urls
+- Use the command `kubectl describe pod etcd-master -n kube-system` and look for --listen-client-urls
   
   <details>
   
@@ -30,7 +30,7 @@ Solutions to practice test - Backup and Restore Methods
   ```
   </details>
     
-- Check the ETCD pod configuration kubectl describe pod etcd-master -n kube-system
+- Check the ETCD pod configuration `kubectl describe pod etcd-master -n kube-system`
   
   <details>
   
@@ -39,7 +39,7 @@ Solutions to practice test - Backup and Restore Methods
   ```
   </details>
   
-- Check the ETCD pod configuration kubectl describe pod etcd-master -n kube-system
+- Check the ETCD pod configuration `kubectl describe pod etcd-master -n kube-system`
   
   <details>
   

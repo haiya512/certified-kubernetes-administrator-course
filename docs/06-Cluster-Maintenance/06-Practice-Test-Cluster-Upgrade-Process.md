@@ -38,7 +38,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the command kubectl get pods -o wide
+- Run the command `kubectl get pods -o wide`
   
   <details>
   
@@ -56,7 +56,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the kubeadm upgrade plan command
+- Run the `kubeadm upgrade plan` command
   
   <details>
   
@@ -65,7 +65,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the kubectl drain master --ignore-daemonsets
+- Run the `kubectl drain master --ignore-daemonsets`
   
   <details>
   
@@ -74,7 +74,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the command apt install kubeadm=1.18.0-00 and then kubeadm upgrade apply v1.18.0 and then apt install kubelet=1.18.0-00 to upgrade the kubelet on the master node
+- Run the command `apt install kubeadm=1.18.0-00` and then `kubeadm upgrade apply v1.18.0` and then `apt install kubelet=1.18.0-00` to upgrade the kubelet on the master node
   
   <details>
   
@@ -85,7 +85,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the command kubectl uncordon master
+- Run the command `kubectl uncordon master`
   
   <details>
   
@@ -94,7 +94,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the command kubectl drain node01 --ignore-daemonsets
+- Run the command `kubectl drain node01 --ignore-daemonsets`
   
   <details>
   
@@ -103,7 +103,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the commands: apt install kubeadm=1.18.0-00 and then kubeadm upgrade node. Finally, run apt install kubelet=1.18.0-00.
+- Run the commands: `apt install kubeadm=1.18.0-00` and then `kubeadm upgrade node`. Finally, run `apt install kubelet=1.18.0-00`.
   
   <details>
   
@@ -114,7 +114,7 @@ Solutions to practice test cluster upgrade process
   ```
   </details>
   
-- Run the command kubectl uncordon node01
+- Run the command `kubectl uncordon node01`
   
   <details>
   

@@ -22,7 +22,7 @@ Solutions to practice test - init-containers
   ```
   </details>
     
-- Run the command kubectl describe pod blue and check the state field of the initContainer.
+- Run the command `kubectl describe pod blue` and check the state field of the initContainer.
 
   <details>
 
@@ -40,7 +40,7 @@ Solutions to practice test - init-containers
   ```
   </details>
   
-- Run the command kubectl describe pod purple
+- Run the command `kubectl describe pod purple`
   
   <details>
   
@@ -49,7 +49,7 @@ Solutions to practice test - init-containers
   ```
   </details>
   
-- Run the kubectl describe pod purple command and look at the container state
+- Run the `kubectl describe pod purple` command and look at the container state
   
   <details>
   

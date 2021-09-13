@@ -49,7 +49,7 @@ Solutions to practice test - multi-container pods
   ```
   </details>
   
-- Run the command 'kubectl -n elastic-stack exec -it app cat /log/app.log'
+- Run the command `kubectl -n elastic-stack exec -it app cat /log/app.log`
   
   <details>
   

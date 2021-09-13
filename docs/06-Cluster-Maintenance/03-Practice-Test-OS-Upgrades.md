@@ -20,7 +20,7 @@ Solutions to practice test - OS Upgrades
   ```
   </details>
   
-- Run the command 'kubectl get pods -o wide' and get the list of nodes the pods are placed on
+- Run the command `kubectl get pods -o wide` and get the list of nodes the pods are placed on
   
   <details>
   
@@ -29,7 +29,7 @@ Solutions to practice test - OS Upgrades
   ```
   </details>
   
-- Run the command kubectl drain node01 --ignore-daemonsets
+- Run the command `kubectl drain node01 --ignore-daemonsets`
   
   <details>
   
@@ -38,7 +38,7 @@ Solutions to practice test - OS Upgrades
   ```
   </details>
   
-- Run the command 'kubectl get pods -o wide' and get the list of nodes the pods are placed on
+- Run the command `kubectl get pods -o wide` and get the list of nodes the pods are placed on
   
   <details>
   
@@ -47,7 +47,7 @@ Solutions to practice test - OS Upgrades
   ```
   </details>
   
-- Run the command kubectl uncordon node01
+- Run the command `kubectl uncordon node01`
   
   <details>
   
@@ -56,7 +56,7 @@ Solutions to practice test - OS Upgrades
   ```
   </details>
   
-- Run the command kubectl get pods -o wide
+- Run the command `kubectl get pods -o wide`
   
   <details>
   
@@ -74,7 +74,7 @@ Solutions to practice test - OS Upgrades
   ```
   </details>
   
-- Use the command kubectl describe node master and look under taint section to check if it has any taints.
+- Use the command `kubectl describe node master` and look under taint section to check if it has any taints.
   
   <details>
   
